@@ -51,7 +51,6 @@ export default {
               fetch(API_URL).then(async response => {//caso de certo ele então pega a resposta e insere no array de animes 
                   const json = await response.json();//response.data sempre será padrão
                   this.animes = json.data
-                  this.animes = json.data
                 }).catch(error => {
                   console.error(error);
                   this.error = true;

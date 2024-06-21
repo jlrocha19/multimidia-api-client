@@ -2,12 +2,12 @@
   <div class="card">
     <p class="card-title">{{ anime.name }}</p>
     <ul class="card-description">
-      <li>Altura: {{ anime.height }}</li>
-      <li>Peso: {{ anime.mass }}</li>
-      <li>Cor do cabelo: {{ anime.hair_color }}</li>
-      <li>Cor de pele: {{ anime.skin_color }}</li>
-      <li>Cor dos olhos: {{ anime.eye_color }}</li>
-      <li>Ano: {{ anime.birth_year }}</li>
+      <li>Nome: {{ anime.Nome }}</li>
+      <li>Genero {{ anime.Genero }}</li>
+      <li>Nota: {{ anime.Nota }}</li>
+      <li>Temporadas: {{ anime.Temporadas }}</li>
+      <li>Episodios: {{ anime.Episodios }}</li>
+      <li>Descrição: {{ anime.Descrição }}</li>
     </ul>
   </div>
 </template>
@@ -16,7 +16,7 @@
 export default {
   name: "CardLocal",
   props: {
-    animes: {
+    anime: {
       type: Object,
       required: true,
     },

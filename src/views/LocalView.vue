@@ -13,7 +13,7 @@
 <script>
 import CardLocal from "@/components/CardLocal.vue";
 
-const API_URL = `http://localhost:3333/alunos`;
+const API_URL = `http://localhost:3333/animes`;
 
 export default {
   data: () => ({
